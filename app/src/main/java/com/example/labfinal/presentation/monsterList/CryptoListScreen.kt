@@ -41,7 +41,10 @@ private fun CryptoListScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Crypto List") }
+                title = { Text("Crypto List", color = MaterialTheme.colorScheme.onPrimary) },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primary
+                )
             )
         }
     ) { innerPadding ->
